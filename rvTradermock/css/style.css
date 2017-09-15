@@ -1,0 +1,896 @@
+              /*Universal Selectors */
+
+              * {
+                box-sizing: border-box;
+              }
+
+              html {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                overflow-x: hidden;
+              }
+              /*Body Selector plus sticky footer */
+
+              body {
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                font-size: 1em;
+              }
+
+              .container {
+                /*sticky footer */
+                flex: 1;
+              }
+              /*Start of header, Nav bar everything inside header is here*/
+
+              .main-header {
+                position: relative;
+                background: url("../img/blue-sky.jpeg") no-repeat top/cover;
+                width: 100%;
+                text-align: center;
+              }
+
+              .main-nav {
+                background: url("../img/nav-background.jpg") no-repeat top/cover;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+
+              .nav-list-item {
+                font-family: 'Lato', sans-serif;
+                display: block;
+                padding-bottom: 10px;
+                margin-right: 50px;
+                color: #8eb82f;
+                text-decoration: none;
+                text-transform: uppercase;
+              }
+
+              .contact-list .phone {
+                display: block;
+                color: #fff;
+                text-decoration: none !important;
+                margin-right: 15px;
+              }
+
+              .contact-list #address {
+                display: block;
+                padding: 1px;
+                margin: 5px;
+                text-decoration: none !important;
+              }
+
+              .opening-header {
+                margin-bottom: 1rem;
+              }
+
+              .top-logo {
+                margin-left: 7rem;
+                margin-top: -0.8rem;
+              }
+              /*This contains the picture section, bottom section*/
+
+              .image-section {
+                margin: 0 auto;
+                width: 100%;
+                height: 40em;
+              }
+
+              .images {
+                margin-top: 1rem;
+                margin-left: 20px;
+              }
+
+              .shadow-cruiser {
+                width: 20rem;
+                height: auto;
+                margin-top: 143px;
+              }
+
+              .trailer-type {
+                font-family: 'Lato', sans-serif;
+                color: #8eb82f;
+                text-transform: uppercase;
+              }
+
+              .second-image-section {
+                background: url("../img/nav-background.jpg") no-repeat center/cover;
+                text-align: center;
+              }
+
+              .search-banner {
+                background: url("../img/kid-2.png") no-repeat right/cover;
+                width: 100%;
+                height: 30rem;
+                z-index: 2;
+                position: relative;
+                text-align: center;
+              }
+
+              .see-us-banner {
+                background: url("../img/road.png") no-repeat left/cover;
+                width: 100%;
+                height: 30em;
+                z-index: 3;
+                text-align: center;
+                background-attachment: fixed;
+                position: relative;
+              }
+
+              .contact-banner {
+                text-align: center;
+                width: 100%;
+                height: 20rem;
+                color: white;
+                background-image: -moz-linear-gradient( 90deg, rgb(121, 157, 40) 0%, rgb(142, 184, 47) 100%);
+                background-image: -webkit-linear-gradient( 90deg, rgb(121, 157, 40) 0%, rgb(142, 184, 47) 100%);
+                background-image: -ms-linear-gradient( 90deg, rgb(121, 157, 40) 0%, rgb(142, 184, 47) 100%);
+              }
+
+              .place-holder {
+                background-image: url("../img/nav-background.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+                width: 100%;
+                height: 10em;
+              }
+
+              .contact-list-bottom .phone-bottom {
+                display: block;
+                text-decoration: none;
+                height: 1.5rem;
+                margin-right: 7.0rem;
+              }
+
+              .view-now {
+                font-family: 'Lato', sans-serif;
+                text-transform: lowercase;
+                margin-top: -1rem;
+              }
+              /*This is where IDS live */
+
+              #header-p {
+                font-size: 1.3em;
+                font-family: 'Lato', sans-serif;
+                text-shadow: .5px .5px #000;
+                color: #fff;
+                font-style: oblique;
+              }
+
+              #ventura-header {
+                font-size: 3.5rem;
+                margin-bottom: -10px;
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                color: #fff;
+                font-style: oblique;
+                text-shadow: 1px 1px #000;
+              }
+
+              #models-button {
+                border-radius: 50px;
+                background-image: -moz-linear-gradient( 90deg, rgb(114, 147, 38) 0%, rgb(142, 184, 47) 100%);
+                background-image: -webkit-linear-gradient( 90deg, rgb(114, 147, 38) 0%, rgb(142, 184, 47) 100%);
+                background-image: -ms-linear-gradient( 90deg, rgb(114, 147, 38) 0%, rgb(142, 184, 47) 100%);
+                padding: 10px 45px;
+                color: #fff;
+              }
+
+              #view-models {
+                font-family: 'Lato', sans-serif;
+                font-size: 1rem;
+                text-transform: uppercase;
+              }
+
+              #address {
+                color: #fff;
+                font-family: 'Lato', sans-serif;
+                font-weight: bold;
+              }
+
+              #search-banner-header {
+                font-size: 2.0rem;
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                color: #fff;
+                font-style: oblique;
+                text-shadow: 1px 1px #000;
+                margin-right: 10px;
+              }
+
+              #featured-items {
+                font-size: 2.0rem;
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                font-style: oblique;
+                text-shadow: 1px 1px #000;
+                margin-right: 10px;
+                color: #8eb82f;
+              }
+
+              #see-us-banner-header {
+                font-size: 2.5rem;
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                margin-top: 120px;
+                color: #fff;
+                font-style: oblique;
+                text-shadow: 1px 1px #000
+              }
+
+              #see-us-banner-address {
+                font-size: 1.5rem;
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                color: #fff;
+                font-style: oblique;
+                text-shadow: 1px 1px #000
+              }
+
+              #contact-us-header {
+                font-family: 'Lato', sans-serif;
+                font-size: 2rem;
+                font-weight: bold;
+                margin-top: 1.2rem;
+                margin-left: 0.5rem;
+                margin-bottom: -1.9rem;
+                text-transform: uppercase;
+              }
+
+              #follow-us {
+                font-family: 'Lato', sans-serif;
+                font-size: 2rem;
+                margin-top: -5px;
+                font-weight: bold;
+                display: block;
+                text-transform: uppercase;
+              }
+              /*This contains Pseudo codes and clearfix*/
+
+              .clearfix::after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+
+              .nav-list-item:hover {
+                cursor: pointer;
+                transform: scale(1.3);
+              }
+
+              #models-button:hover {
+                cursor: pointer;
+                opacity: 0.5;
+                color: #2D3945;
+                background: #eee;
+              }
+
+              #models-button:active {
+                top: 2px;
+                border: 1px solid #000;
+              }
+
+              .btn:hover {
+                color: #2D3945;
+                background: #eee;
+                opacity: 0.5;
+              }
+
+              .btn:active {
+                top: 2px;
+                border: 1px solid #333;
+              }
+
+              .footer-list-item:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+              }
+
+              .fa:hover {
+                cursor: pointer;
+                transform: scale(1.3);
+              }
+
+              .view-now:hover {
+                cursor: pointer;
+                transform: scale(1.3);
+              }
+              /*classes used over multiple elements*/
+
+              .icon {
+                margin: 0 10px;
+              }
+
+              .rv {
+                max-width: 100%;
+                max-height: 100%;
+                margin: 0 auto;
+                margin: 0 10px;
+              }
+
+              .logo {
+                margin-right: 20px;
+                margin-left: 10px;
+                cursor: pointer;
+              }
+
+              .ventura-logo {
+                opacity: 0.8;
+                height: 5em;
+                width: 15em;
+                margin-top: 0.5rem;
+              }
+
+              .ventura-logo-bottom {
+                opacity: 0.8;
+                height: 5em;
+                width: 15em;
+                margin-top: 1.8rem;
+              }
+
+              .wrapper optgroup {
+                color: lightgrey;
+              }
+              /* FONT AWESEOM CLASSES */
+
+              .fa-phone {
+                margin-right: 5px;
+              }
+
+              .fa-tag {
+                color: #8eb82f;
+              }
+
+              .fa-map-marker {
+                margin-right: 5px;
+              }
+
+              .fa-facebook-square {
+                color: #fff;
+                margin-top: 5px;
+                margin-right: 8px;
+              }
+
+              .fa-twitter-square {
+                color: #fff;
+                margin-top: 5px;
+                margin-right: 8.6rem;
+              }
+
+              .fa-tag {
+                padding: 0 10px;
+              }
+
+              .fa-search {
+                margin-right: 5px;
+              }
+
+              .contact-list .fa-facebook-square {
+                margin-left: 5rem;
+              }
+              /*form styling*/
+
+              select {
+                margin: 0.5rem;
+                border: 1px solid #111;
+                background: transparent;
+                width: 20rem;
+                padding: 5px 35px 5px 5px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                height: 34px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background: url("../img/drop-down-arrow.png") 96% / 5% no-repeat #fff;
+                border-radius: 10px;
+              }
+
+              .banner-flex {
+                margin-left: 1rem;
+              }
+
+              .wrapper {
+                margin: 0 0 20px 0;
+              }
+
+              .wrapper .category {
+                width: 20rem;
+              }
+
+              .wrapper .manufactuer {
+                width: 15rem;
+              }
+
+              .btn {
+                font-family: 'Lato', sans-serif;
+                background-color: #8eb82f;
+                width: 20rem;
+                height: 40px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                cursor: pointer;
+                transition: all 0.2s;
+                border-radius: 10px;
+                margin-top: 10px;
+                color: #fff;
+                background-image: -moz-linear-gradient( 90deg, rgb(114, 147, 38) 0%, rgb(142, 184, 47) 100%);
+                background-image: -webkit-linear-gradient( 90deg, rgb(114, 147, 38) 0%, rgb(142, 184, 47) 100%);
+                background-image: -ms-linear-gradient( 90deg, rgb(114, 147, 38) 0%, rgb(142, 184, 47) 100%);
+              }
+              /*start of footer */
+
+              .main-footer {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                background-image: url("../img/sand.jpeg");
+                background-position: bottom;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 18em;
+              }
+
+              .footer-list-item {
+                font-family: 'Lato', sans-serif;
+                display: block;
+                text-decoration: none !important;
+                color: #fff;
+                padding: 0.5rem;
+                margin-right: 3rem;
+                ;
+              }
+
+              .copyright-container {
+                color: #fff;
+              }
+
+              .rv-logo {
+                width: auto;
+                height: 4rem;
+                margin-top: 1rem;
+              }
+
+              .styled-select {
+                overflow: hidden;
+                height: 74px;
+                float: left;
+                width: 365px;
+                margin-right: 10px;
+                background: url(http://i50.tinypic.com/9ldb8j.png) no-repeat right center #5c5c5c;
+              }
+
+              .styled-select select {
+                font-size: 34px;
+                border-radius: 0;
+                border: none;
+                background: transparent;
+                width: 380px;
+                overflow: hidden;
+                padding-top: 15px;
+                height: 70px;
+                text-indent: 10px;
+                color: magenta;
+                -webkit-appearance: none;
+              }
+
+              .wrapper select {
+                color: lightgrey;
+              }
+              /*media queries */
+
+              @media (min-width: 550px) {
+                .shadow-cruiser {
+                  width: 35rem;
+                  height: auto;
+                  margin-top: 5rem;
+                }
+                #ventura-header {
+                  margin-top: 1rem;
+                }
+              }
+
+              @media (min-width: 707px) {
+                select {
+                  border: 1px solid #111;
+                  background: transparent;
+                  width: 14.5rem;
+                  font-size: 16px;
+                  border: 1px solid #ccc;
+                  height: 34px;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  appearance: none;
+                  background: url("../img/drop-down-arrow.png") 96% / 5% no-repeat #fff;
+                }
+                .wrapper .category {
+                  width: 30rem;
+                }
+                .btn {
+                  font-family: 'Lato', sans-serif;
+                  background-color: #8eb82f;
+                  width: 30.89rem;
+                  height: 40px;
+                  text-transform: uppercase;
+                  letter-spacing: 2px;
+                  cursor: pointer;
+                  transition: all 0.2s;
+                  border-radius: 10px;
+                  margin-top: 10px;
+                  color: #fff;
+                  margin-left: 5px;
+                  background-image: -moz-linear-gradient( 90deg, rgb(114, 147, 38) 0%, rgb(142, 184, 47) 100%);
+                  background-image: -webkit-linear-gradient( 90deg, rgb(114, 147, 38) 0%, rgb(142, 184, 47) 100%);
+                  background-image: -ms-linear-gradient( 90deg, rgb(114, 147, 38) 0%, rgb(142, 184, 47) 100%);
+                }
+              }
+
+              @media (min-width: 835px) {
+                .main-header {
+                  height: 50rem;
+                  background: url("../img/Untitled-21.png") no-repeat top/cover;
+                  width: 100%;
+                  text-align: center;
+                }
+                .shadow-cruiser {
+                  display: none;
+                }
+                .main-nav {
+                  height: 2.5rem;
+                }
+                .main-nav, .nav-list {
+                  display: flex;
+                  justify-content: space-around;
+                  font-size: 12px;
+                }
+                .main-header .flex-container {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                }
+                .main-header {
+                  height: 47em;
+                }
+                .image-flexbox {
+                  display: flex;
+                  flex-direction: row;
+                }
+                .opening-header {
+                  position: absolute;
+                  top: 60%;
+                  right: -65%;
+                  left: 0;
+                  align: center;
+                }
+
+                .banner-flex {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-around;
+                }
+                .flex {
+                  flex: 1;
+                }
+                .contact-banner {
+                  height: 10rem;
+                  text-align: center;
+                }
+                .footer-flex {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-around;
+                }
+                .list-container {
+                  order: 1;
+                }
+                .footer-list {
+                  display: flex;
+                  flex-direction: row;
+                }
+                .main-footer {
+                  height: 5em;
+                }
+                .footer-list-item {
+                  margin: 0 -5px;
+                }
+                .copyright-container {
+                  margin-top: 0.8em;
+                  color: #fff;
+                }
+                #contact-us-header {
+                  padding-top: 0.125em;
+                  display: block;
+                }
+                #follow-us {
+                  padding-top: 0.8em;
+                }
+                #follow-us .fa-twitter-square {
+                 margin-right: 10rem;
+                }
+                #ventura-header {
+                  font-size: 2.8rem;
+                }
+                #header-p {
+                  font-size: 1.0rem;
+                }
+                .ventura-logo {
+                  opacity: 0.8;
+                  height: 2.5rem;
+                  width: 8.5rem;
+                  margin-top: 0.5em;
+                  margin-left: 20px;
+                }
+                .rv-logo {
+                  width: auto;
+                  height: 4rem;
+                  margin-top: 0.5rem;
+                }
+
+                select {
+                  border: 1px solid #111;
+                  background: transparent;
+                  width: 14.9rem;
+                  font-size: 16px;
+                  border: 1px solid #ccc;
+                  height: 34px;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  appearance: none;
+                  background: url("../img/drop-down-arrow.png") 96% / 5% no-repeat #fff;
+                }
+                .btn {
+                  font-family: 'Lato', sans-serif;
+                  background-color: #8eb82f;
+                  width: 32.09rem;
+                  height: 40px;
+                }
+                .wrapper .category {
+                  width: 30.8rem;
+                }
+                .fa:hover {
+                  cursor: pointer;
+                  transform: scale(1.3);
+                  color: skyblue;
+                }
+                .contact-list-bottom {
+                  margin-top: 2rem;
+                }
+                .search-banner {
+                  background: url("../img/kid-2.png") no-repeat center/cover;
+                }
+                .rv {
+                  margin-top: 0.5rem;
+                }
+                .top-logo {
+                  margin-left: 0;
+                  margin-top: 0.225rem;
+                }
+                .see-us-banner-text {
+                  margin: 0 10rem;
+                }
+                .contact-list {
+                  display: flex;
+                  flex-direction: center;
+                }
+                .image-flexbox {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-around;
+                }
+                .contact-list #address {
+                  display: block;
+                  padding: 0 15px;
+                  margin: 0;
+                  text-decoration: none !important;
+                }
+                .header {
+                  font-size: 2.5rem;
+                }
+                .top-logo .fa-twitter-square {
+                  color: #fff;
+                  margin-top: 0;
+                  margin-right: 10px;
+                }
+                #ventura-header {
+                  font-size: 2.5rem;
+                }
+                #header-p {
+                  font-size: 0.8rem;
+                }
+                .opening-header {
+                  left: 4%;
+                  top: 40%;
+                }
+                .form-wrapper {
+                  margin-left: 10rem;
+                }
+
+              }
+
+              @media (min-width: 900px) {
+                .main-header {
+                  height: 50rem;
+                  background: url("../img/Untitled-20.png") no-repeat top/cover;
+                  width: 100%;
+                  text-align: center;
+                }
+                .main-nav {
+                  height: 2.5rem;
+                }
+                .main-nav, .nav-list {
+                  display: flex;
+                  justify-content: space-around;
+                  font-size: 12px;
+                }
+                .main-header .flex-container {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                }
+                .main-header {
+                  height: 47em;
+                }
+                .image-flexbox {
+                  display: flex;
+                  flex-direction: row;
+                }
+                .opening-header {
+                  position: absolute;
+                  top: 60%;
+                  right: -65%;
+                  left: 0;
+                  align: center;
+                }
+
+                .banner-flex {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-around;
+                }
+                .flex {
+                  flex: 1;
+                }
+                .contact-banner {
+                  height: 10rem;
+                  text-align: center;
+                }
+                .footer-flex {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-around;
+                }
+                .list-container {
+                  order: 1;
+                }
+                .footer-list {
+                  display: flex;
+                  flex-direction: row;
+                }
+                .main-footer {
+                  height: 5em;
+                }
+                .footer-list-item {
+                  margin: 0 -5px;
+                }
+                .copyright-container {
+                  margin-top: 0.8em;
+                  color: #fff;
+                }
+                #contact-us-header {
+                  padding-top: 0.125em;
+                  display: block;
+                }
+                #follow-us {
+                  padding-top: 0.8em;
+                }
+                #ventura-header {
+                  font-size: 2.8rem;
+                }
+                #header-p {
+                  font-size: 1.0rem;
+                }
+                .ventura-logo {
+                  opacity: 0.8;
+                  height: 2.5rem;
+                  width: 8.5rem;
+                  margin-top: 0.5em;
+                  margin-left: 20px;
+                }
+                .rv-logo {
+                  width: auto;
+                  height: 4rem;
+                  margin-top: 0.5rem;
+                }
+
+                select {
+                  border: 1px solid #111;
+                  background: transparent;
+                  width: 14.4rem;
+                  font-size: 16px;
+                  border: 1px solid #ccc;
+                  height: 34px;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  appearance: none;
+                  background: url("../img/drop-down-arrow.png") 96% / 5% no-repeat #fff;
+                }
+                .wrapper .category {
+                  width: 30rem;
+                }
+                .fa:hover {
+                  cursor: pointer;
+                  transform: scale(1.3);
+                  color: skyblue;
+                }
+                .contact-list-bottom {
+                  margin-top: 2rem;
+                }
+                .contact-list #address {
+                  display: block;
+                  padding: 0 15px;
+                  margin: 0;
+                  text-decoration: none !important;
+                }
+                .header {
+                  font-size: 2.5rem;
+                }
+                .fa-twitter-square {
+                  color: #fff;
+                  margin-top: 0;
+                  margin-right: 10px;
+                }
+                #ventura-header {
+                  font-size: 2.5rem;
+                }
+                .opening-header {
+                  left: -2%;
+                  top: 40%;
+                }
+              }
+
+              @media (min-width: 1100px) {
+                .main-header {
+                  height: 50rem;
+                  background: url("../img/Untitled-19.png") no-repeat top/cover;
+                  width: 100%;
+                  text-align: center;
+                }
+                .opening-header {
+                  left: -8%;
+                  top: 40%;
+                }
+                #ventura-header {
+                  font-size: 4rem;
+                }
+
+              }
+
+              @media (min-width: 1295px) {
+                .main-header {
+                  height: 50rem;
+                  background: url("../img/Untitled-18.png") no-repeat top/cover;
+                  width: 100%;
+                  text-align: center;
+                }
+                .opening-header {
+                  left: -8%;
+                  top: 40%;
+                }
+                .see-us-banner-text {
+                  margin: 0 28.5rem;
+                  line-height: 2.2;
+                }
+                #ventura-header {
+                  font-size: 4.5rem;
+                }
+
+              }
